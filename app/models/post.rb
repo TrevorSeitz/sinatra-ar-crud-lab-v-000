@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   attr_accessor :name, :content
 
   # POSTS = []
-  # @@all = []
+  @@all = []
 
   def initialize(params)
     @name = params[:name]
