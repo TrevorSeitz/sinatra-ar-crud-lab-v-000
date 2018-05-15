@@ -15,7 +15,8 @@ class Post < ActiveRecord::Base
   end
 
   def self.all
-    POSTS
+    # POSTS
+    @@all
   end
 
   def self.clear
