@@ -1,10 +1,12 @@
-<h1>Blog #<%= @post.id %></h1>
+<h1>Update Post</h1>
 
   <h3><%= @post.name %></h3>
   <p><%= @post.content %></p>
   <br>
 
-<form action="/posts/:id" method="patch">
+<form action="/posts/:id" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
 
 <input type="submit" id="Submit" value="submit">
+
+</form>
