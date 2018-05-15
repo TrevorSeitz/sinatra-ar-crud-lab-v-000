@@ -3,7 +3,7 @@
 
 <form action="/posts/:id" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
-  <h3><%= @post.name %></h3>
+  <p>Title: </p><input type="text" name="name" value="<%= @post.name %>"><br>
   <p><%= @post.content %></p>
   <br>
 
