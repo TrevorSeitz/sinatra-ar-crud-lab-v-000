@@ -12,11 +12,11 @@ class Post < ActiveRecord::Base
     POSTS << self
   end
 
-  self.all
+  def self.all
     POSTS
   end
 
-  self.clear
+  def self.clear
     POSTS.clear
   end
 
