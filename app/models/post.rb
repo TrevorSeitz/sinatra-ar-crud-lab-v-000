@@ -20,7 +20,8 @@ class Post < ActiveRecord::Base
   end
 
   def self.clear
-    POSTS.clear
+    # POSTS.clear
+    @@all.clear
   end
 
 end
